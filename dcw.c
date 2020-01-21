@@ -20,7 +20,7 @@ inline int checksumDCW(uint8_t *data)
 }
 
 
-inline int isnullDCW(uint8_t *data)
+int isnullDCW(uint8_t *data)
 {
 	int a0 = ( !data[0] && !data[1] && !data[2] );
 	int a1 = ( !data[4] && !data[5] && !data[6] );

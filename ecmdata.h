@@ -127,7 +127,7 @@ extern int totalecm;
 void init_ecmdata();
 uint32_t ecm_crc( uint8_t *ecm, int ecmlen);
 unsigned int hashCode( unsigned char *buf, int count);
-inline uint8_t checkECMD5(uint8_t *ecmd5);
+uint8_t checkECMD5(uint8_t *ecmd5);
 
 void ecm_addip( ECM_DATA *ecm, unsigned int ip);
 int ecm_checkip(ECM_DATA *ecm, unsigned int ip);

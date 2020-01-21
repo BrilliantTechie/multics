@@ -1646,7 +1646,7 @@ int cache_setdcw( struct cache_data *req, uint8_t cw[16], cwcycle_t cwcycle, int
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-inline void cache_recvmsg(struct cacheserver_data *cache)
+void cache_recvmsg(struct cacheserver_data *cache)
 {
 	unsigned int recv_ip;
 	unsigned short recv_port;

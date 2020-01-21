@@ -69,7 +69,7 @@ uint32_t hashCode( uint8_t *buf, int count)
     return h;
 }
 
-inline uint8_t checkECMD5(uint8_t *ecmd5)
+uint8_t checkECMD5(uint8_t *ecmd5)
 {
 	int8_t i;
 	for (i=0;i<16;i++)

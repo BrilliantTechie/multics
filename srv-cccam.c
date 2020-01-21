@@ -858,7 +858,7 @@ void cc_store_ecmclient(ECM_DATA *ecm, unsigned int cardid, struct cc_client_dat
 ///////////////////////////////////////////////////////////////////////////////
 
 // Receive messages from client
-inline void cc_cli_parsemsg(struct cc_client_data *cli, uint8_t *buf, int len)
+void cc_cli_parsemsg(struct cc_client_data *cli, uint8_t *buf, int len)
 {
 	if (len>=CC_MAXMSGSIZE) return;
 

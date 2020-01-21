@@ -308,7 +308,7 @@ void cacheex_pipe_recvmsg()
 */
 ///////////////////////////////////////////////////////////////////////////////
 
-inline int cacheex_check( struct cache_data *req )
+int cacheex_check( struct cache_data *req )
 {
 	if ( !req->caid || !req->hash || !req->sid ) return 0;
 	if (cfg.cache.caids[0]) {
